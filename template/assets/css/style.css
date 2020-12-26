@@ -1,0 +1,867 @@
+    /*------------------------------------------------------------------
+    [Master Stylesheet]
+
+    Project:    Admin Dashboard
+    Version:    1.0
+    Author Name:    Md. Mokbul Hussain
+    -------------------------------------------------------------------*/
+
+
+    /*------------------------------------------------------------------
+    [Table of contents]
+
+    1. Body
+    2.
+    -------------------------------------------------------------------*/
+    /*
+    ==========================================
+        Google Fonts
+    ==========================================
+    */
+    /*font-family: 'Raleway', sans-serif;*/
+    /*@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700');
+
+
+   
+    /*
+    ==========================================
+        Reset Css
+    ==========================================
+    */
+
+    /* @font-face {
+        font-family: raleway;
+        src: url(../fonts/Raleway-Light.ttf);
+    } */
+    html,
+    body{
+    height: 100%;
+
+    }
+
+    body{
+        background:#F2F3F8;
+        font-family: raleway;
+        font-size: 16px ;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    ul li {
+        list-style: none;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
+        margin: 0;
+       font-size: 16px;
+    }
+    h2{
+        font-size:20px;
+    }
+
+    /*============ start Responsive button code ===========*/
+
+    .sidebar-responsive-control-btn {
+        position: absolute;
+        right: 120px;
+    }
+
+    .sidebar-responsive-control-btn i{
+        color:#00caff;
+    }
+
+    .header-left-responsive-control-btn {
+        position: absolute;
+        right: 70px;
+    }
+
+    .header-left-responsive-control-btn i{
+        color:#00caff;
+    }
+
+    .header-right-responsive-control-btn {
+        position: absolute;
+        right: 90px;
+    }
+
+    .header-right-responsive-control-btn i{
+        color:#00caff;
+    }
+
+    .left-menu-responsive-cross-btn{
+        float: right;
+    }
+
+    .left-menu-responsive-cross-btn i{
+        color:#fff;
+    }
+
+    .sidebar-responsive-cross-btn{
+        float: right;
+        margin-top: -45px;
+        border-bottom: 2px solid #00f7ff;
+        display: none;
+    }
+    
+    .sidebar-responsive-cross-btn i{
+        color:#00caff
+    }
+
+    /*============ End Responsive button code ===========*/
+
+
+    /*============ Start Sidebar show hid button Css ===========*/
+
+    .show-hide-sidebar-button {
+        margin-left: 80px;
+        border: none;
+        background: transparent;
+        margin-top: 20px;
+        cursor: pointer;
+        margin-right: 20px;
+    }
+
+    .show-hide-sidebar-button i {
+        color: #05caff;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .dataTables_wrapper .dataTables_filter {
+        text-align: left !important;
+        width: 100%;
+        padding: 10px 0px 20px 0px;
+    }
+
+    .dataTables_wrapper .dataTables_filter input {
+        margin-left:0px !important;
+        width: 400px;
+        border: none;
+        border: 1px solid #6ecafc;
+        height: 40px;
+    }
+
+    .dashboard-table{
+         width:100%;
+    }
+
+    table.dataTable.no-footer {
+        border-bottom:none !important;
+    }
+
+    .btn-size{
+        padding:0px 3px;
+    }
+
+    .print-body{
+        background: #fff;
+    }
+
+    thead tr th {
+        font-size: 15px !important;
+    }
+
+    tbody tr td {
+        font-size: 14px;
+    }
+
+
+    /*============ End Sidebar show hide button Css ===========*/
+
+
+
+
+    /*
+    ==========================================
+        Header Main Menu Css
+    ==========================================
+    */
+
+
+    .navbar{
+        background:#6202A5 !important;
+        padding-top:0px;
+        padding-bottom:0px;
+    }
+
+    .right-dropdown-nav{
+        width:100%;
+    }
+
+    .dropdown-link-hover a:hover{
+     background: #333131;
+    }
+
+    /*Dropdown menu Action*/
+
+    .dropdown-menu{
+        width: 330px;
+        left: -250px;
+        border: none;
+        border-radius: 0px;
+        box-shadow: 0px -1px 10px #8f8f8f;
+        animation: .5s slideDown forwards;
+        background:#FBFBFB;
+    }
+
+    @keyframes slideDown {
+      0% {
+        transform: translate3d(0px, 20px, 0px);
+        opacity: 0;
+        z-index:-1;
+      }
+      99% {
+        transform: translate3d(0px, -1px, 0px);
+        opacity: 1;
+        z-index:-1;
+      }
+      100% {
+        z-index:0;
+      }
+    }
+
+    .dropdown-submenu:hover > ul.dropdown-menu {
+        display: block;
+    }
+    .dropdown-submenu {
+        position:relative;
+    }
+    .dropdown-submenu>.dropdown-menu {
+        top:0;
+        left:100%;
+        margin-top:-6px;
+        z-index: 1 !important;
+
+    }
+
+    /* rotate caret on hover */
+    .dropdown-menu > li > a:hover:after {
+        text-decoration: underline;
+        transform: rotate(-90deg);
+    } 
+
+
+    /*============ Start Barnd Name Css ===========*/
+
+    .brand-name {
+        font-size: 14px;
+        text-transform: uppercase;
+        color: #fff !important;
+        font-weight: 600;
+    }
+
+    .brand-name span {
+      color: #00caff;
+    }
+
+    /*============ End Barnd Name Css ===========*/
+
+
+
+    /*============ Start Header Left Menu ===========*/
+
+    .navbar-nav-menu li{
+        margin-left:10px;
+    }
+
+    .dropdown-nav-link{
+        padding: 16px 0px;
+        margin-left: 10px;
+    }
+
+    .dropdown-nav-link .nav-link-left-icon {
+        font-size: 14px;
+        color: #05caff;
+        margin-right: 10px;
+    }
+
+    .dropdown-nav-link .nav-link-title {
+        font-size: 16px;
+        text-transform: capitalize;
+        color: #fff;
+        margin-right: 10px;
+    }
+
+    .dropdown-nav-link .nav-link-right-icon {
+        font-size: 14px;
+    color: #05caff;
+    float: right;
+    margin-right: 10px;
+    margin-top: 8px;
+    }
+
+    .dropdown-menu-item {
+        background: #fff;
+        left: 10px;
+        width: 280px;
+        top: 55px;
+    }
+
+    .nav-item{
+        margin-left:0px !important;
+       
+    }
+    .nav-link{
+        padding-right: 10px !important
+    }
+
+    .dropdown-menu-item li a {
+        text-transform: capitalize;
+        color: #7d7d7d !important;
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+
+     .dropdown-menu-item li a i {
+        margin-right: 20px;
+        color: gray;
+    }
+
+    .dropdown-menu-item li a:hover {
+        color: blue !important;
+        background:#ececec;
+    }
+
+    .dropdown-item-count{
+        float: right;
+        background: #1788a7;
+        height: 20px;
+        width: 20px;
+        border-radius: 100%;
+        left: 10px;
+        line-height: 18px;
+        text-align: center;
+        color: #fff;
+    }
+
+    .dropdown-submenu-icon {
+        text-align: right;
+        float: right;
+        color: gray;
+        font-size: 16px;
+        margin-right: 8px !important;
+    }
+
+    .dropdown-link-hover{
+        background:transparent;
+    }
+
+  .dropdown-submenu-item-show{
+    display: none !important;
+  }
+
+   .dropdown-submenu:hover > ul.dropdown-menu {
+        display: block !important;
+    }
+
+    
+
+    /*============ End Header Left Menu ===========*/
+
+    
+
+
+
+   
+
+
+    /*============ Star Profile Widget Menu Css ===========*/
+
+    .dropdown-img img{
+        width:41px;
+        height: 41px;
+        border-radius: 100%;
+    }
+
+    .profile-info {
+        background: #fff;
+        padding: 30px 20px;
+    }
+
+    .profile-img img {
+        width: 70px;
+        height: 70px;
+        border-radius: 100%;
+    }
+
+    .profile-detail h3 {
+        font-size: 16px;
+        text-transform: capitalize;
+        font-weight: 600;
+        color: #393A3C;
+        letter-spacing: 1px;
+        margin-top: 20px;
+    }
+
+    .profile-detail p {
+        font-size: 16px;
+        font-weight: 500;
+        margin-top: 4px;
+        color: #3e3d3d;
+    }
+
+    .profile-activity {
+        padding: 20px 0px;
+    }
+
+    .profile-activity .dropdown-item {
+        font-size: 16px;
+        color: #898989;
+        font-weight: 500;
+        text-transform: capitalize;
+        background: transparent;
+        padding-bottom: 10px;
+        padding-top: 12px;
+    }
+
+    .profile-activity .dropdown-item i {
+        color: #0078ff;
+        margin-right: 20px;
+        font-size: 20px;
+    }
+
+    .profile-activity .dropdown-item:hover {
+        color: blue;
+        background: transparent;
+    }
+
+    .profile-msg-total {
+        float: right;
+        background: #2279fb;
+        padding: 3px 6px 6px 6px;
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        line-height: 1;
+        color: #fff;
+        font-size: 14px;
+    }
+
+    /*============ End Profile Widget Menu Css ===========*/
+
+
+
+
+
+
+    /*============ START SIDEBAR CSS ===========*/
+
+    .sidebar {
+        width: 250px;
+        float: left;
+        background: #282733  !important;
+        transition: 0.3s;
+        position: absolute;
+        height: 2000px;
+        display: block;
+        z-index: 1;
+    }
+
+    .sidebar-part {
+        height: 100%;
+        margin-top: 90px;
+        background: #282733  !important;  
+    }
+
+    .sidebar-width-hide{
+        transform: translate(-276px);
+        transition: 0.3s;
+    }
+
+
+    .sidebar-menu .department{
+        margin-left: 25px;
+        color: #00dcff;
+        font-size: 15px;
+        text-transform: uppercase;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    .sidebar-dropdown {
+        background: transparent;
+        border: none;
+    }
+
+    .sidebar-menu li a {
+        padding: 15px;
+        font-size: 16px;
+        text-transform: capitalize;
+        color: #b7b7b7;
+    }
+
+    .sidebar-menu li a:hover {
+        background: #3e3b3b !important;
+        color: #fff;
+    }
+
+    .sidebar-menu li a i {
+        color: #05caff;
+        margin-right: 20px;
+        margin-left: 10px;
+    }
+
+    .sidebar-dropdown-menu-icon {
+        float: right;
+        font-size: 16px;
+        margin-top: 3px;
+        margin-right: 0px !important;
+    }
+
+    .sidebar-dropdown-menu li a{
+        font-size: 14px;
+    }
+
+    .sidebar-dropdown-menu li a i{
+        margin-left:20px;
+    }
+
+    .sidebar-dropdown-submenu-icon{
+        float: right;
+    }
+
+    .sidebar-dropdown-submenu li a i{
+        margin-left:30px;
+    }
+
+    .sidebar-dropdown-submenu li a{
+        font-size: 14px;
+    }
+     .dashboard a {
+        
+        background: #6202A5;
+        color:#fff !important;
+    }
+
+    .dashboard-icon {
+        position: absolute;
+        font-size: 100px;
+        color: #F2F3F8;
+        top: 66px;
+        right: -6px;
+        height: ;
+    }
+    .sidebar-count{
+        color: #fff;
+        float: right;
+        background: #0079ff;
+        height: 25px;
+        width: 25px;
+        border-radius: 100%;
+        font-size: 14px;
+        line-height: 8px;
+        padding: 9px;
+        margin-right: -4px;
+    }
+
+    .sidebar-count-one{
+        background:#cf0ec0;
+    }
+
+    .sidebar-count-two{
+        background:#5071ff;
+    }
+
+
+    /*============ END SIDEBAR CSS ===========*/
+
+
+
+  /*============ START BODY CONTENT CSS ===========*/
+
+    .content {
+/*
+        float: left;
+        width: 100%;*/
+        margin-top: 100px;
+    }
+    .content-body {
+       /* padding: 0px 15px;
+        margin-left:250px;*/
+    
+    }
+    .content-full-width{
+       /* margin-left:0px;*/
+
+    }
+
+     .row-section{
+        margin-top:50px;
+	}
+
+    /*DASHBOARD CSS*/
+	
+    /*====================== START WIDGET-2 CSS ========================*/
+
+.widget2-row {
+  margin-top: 30px;
+}
+.widget2-item-content {
+    background: #fff;
+    padding: 10px 10px;
+    margin-top: 30px;
+    box-shadow: 0px 0px 2px #08b1ff;
+}
+.widget2-item-content .title {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #747474;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+.widget2-item-content .total {
+  font-size: 14px;
+  font-weight: 600;
+  color: #39393b;
+}
+.widget2-item-content .main-icon {
+  display: table-cell;
+  float: right;
+  margin-top: -20px;
+  /*! margin-bottom: 20px; */
+}
+.widget2-item-content .main-icon i {
+  color: #fff;
+    background-image: linear-gradient(to right, #113ed7 , #78f6e4);
+  padding: 15px;
+border-radius: 100%;
+font-size: 18px;;
+}
+.bottom-part {
+}
+.widget2-item-content .bottom-part {
+  margin-top: 15px;
+}
+.widget2-item-content .bottom-part .sub-icon {
+  margin-right: 10px;
+  font-size: 16px;
+  color: blue;
+}
+.widget2-item-content .bottom-part .count-value {
+  font-size: 16px;
+  color: #f008ff;
+  margin-right: 10px;
+}
+.widget2-item-content .bottom-part .time {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: dimgray;
+}
+
+.widget2-item-content-two .main-icon i {
+
+  background-image: linear-gradient(to right, #7711d7 , #7b8987)
+}
+.widget2-item-content-three .main-icon i {
+
+  background-image: linear-gradient(to right, #113ed7 , #78f6e4);
+ 
+}
+.widget2-item-content-four .main-icon i {
+
+  background-image: linear-gradient(to right, #113ed7 , #78f6e4);
+
+}
+
+.dateshow{
+    background:#6202A5;
+    padding:10px 0px;
+    text-align: center;
+    color:#fff;
+}
+
+
+
+
+/*====================== END WIDGET-2 CSS ========================*/
+
+	.modal {
+		top: 100px;
+    }
+    .sellboard-body{
+        
+    }
+    .sellboard-container{
+        margin-top: 65px;
+    }
+
+    .sellboard-heading{
+        margin-bottom:50px;
+    }
+    
+.sellboard-heading h3 {
+    text-align: center;
+    font-size: 25px;
+    text-transform: capitalize;
+    font-family: raleway;
+    position: relative;
+  }
+  .sellboard-heading h3:before {
+    width: 200px;
+    height: 2px;
+    background: #005dff;
+    content: "";
+    position: absolute;
+    margin-left: -44px;
+    top: 35px;
+  }
+  .sellboard-heading h3:after {
+    content: "";
+    position: absolute;
+    width: 15px;
+    background: red;
+    height: 15px;
+    border-radius: 100%;
+    margin-left: -60px;
+    top: 28px;
+  }
+
+  .sellboard-search-item{
+    background: white;
+    padding: 10px;
+    box-shadow: 0px 0px 2px #8787b1;
+  }
+
+  .sellboard-item-sell{
+    background: white;
+    padding: 10px;
+    padding-top:5px;
+    box-shadow: 0px 0px 2px #8787b1;
+
+  }
+  .sellboard-item-sell-heading {
+    margin-top: 10px;
+  }
+
+  .sellboard-item-sell-heading h3.invoice {
+    display: inline-block;
+    font-size: 18px;
+    color: #b210c3;
+  }
+  .sellboard-item-sell-heading h3.date {
+    display: inline-block;
+    text-align: center;
+    float: right;
+    font-size: 18px;
+    color: #ff0341;
+  }
+  .sellboard-item-sell-heading h3.time {
+    float: right;
+    display: inline-block;
+    font-size: 18px;
+    margin-right: 40px;
+    color: #105fa2;
+  }
+
+
+    .sellboard-item-table{
+        margin-top: 20px;
+    }
+
+  .sellboard-customer-info{
+      margin-top:40px;
+  }
+
+  .total-invoice-taka{
+      text-align: right;
+     
+  }
+  .total-invoice-taka input{
+   
+    color: #0f0202;
+    background: #fff;
+      
+  }
+  .total-invoice-cash{
+      text-align: right;
+      margin-top:10px;
+      margin-bottom: 10px;
+  }
+  .total-invoice-due{
+      text-align: right;
+  }
+  .total-invoice-cash input{
+      
+     
+  }
+
+  .total-invoice-due input {
+    
+    
+}
+    
+.invoiceboard{
+    margin-top: 50px;
+}
+
+.daily-expense{
+    background:#6363de;
+    box-shadow: 1px 1px 5px gray;
+}
+
+.daily-sell{
+    background:#1a9de4;
+    box-shadow: 1px 1px 5px gray;
+
+}
+
+.daily-cash{
+    background:#e138fb;;
+    box-shadow: 1px 1px 5px gray;
+
+}
+
+.daily-due {
+    background: #721dae;
+    box-shadow: 1px 1px 5px gray;
+}
+
+.print{
+    margin-top:50px;
+}
+.print-logo {
+  text-align: center;
+  margin-top: 50px;
+}
+.print-logo h3 img {
+  margin-right: 20px;
+}
+.print-logo h3 span {
+  font-size: 20px;
+  /*! margin-top: 17px; */
+}
+.print-address{
+    margin-top:30px;
+}
+.customer-info{
+    text-align: center;
+}
+.shop-info{
+    text-align: center;
+}
+.print-table{
+  
+    margin-top: 40px;
+}
+.qutationTotal{
+    text-align: right;
+    margin-right: 96px;
+    margin-top: 10px;
+
+}
+
+
+
+
+

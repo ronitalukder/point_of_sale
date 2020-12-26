@@ -1,0 +1,173 @@
+/*******************************
+	All Responsive Code
+*******************************/
+
+/*Max Width 991px Css*/
+
+@media only screen and (max-width: 991px) {
+
+	.sidebar.navbar-collapse.collapse{
+   		display: none;
+   	}
+
+	.sidebar.navbar-collapse.collapse.show{
+   		display: block;
+   	}
+
+   .sidebar-responsive-cross-btn{
+   		display: block;
+   	}
+
+   .show-hide-sidebar-button{
+   		display: none;
+   	}
+
+    .content-body {
+	    padding: 0px 0px;
+	    margin-left: 0px;
+	}
+
+	#LeftMenu{
+		position: fixed;
+		top: 0px;
+		z-index: 1;
+		background:#363636;
+		width: 300px;
+		right: 0px;
+		padding-left: 0px;
+		height: 100%;
+	}
+
+	#LeftMenu ul li{
+		width:100%;
+	}
+
+	#LeftMenu ul li a{
+		width:100%;
+	}
+
+	#rightMenu{
+		
+		margin-top:-40px;
+	}
+
+	.dropdown-submenu:hover > ul.dropdown-menu {
+        display: none;
+    }
+
+	
+	.header-responsive-right-menu {
+    padding-left: 0px;   
+	}
+
+	.header-left-menu {
+    	margin-top: 40px;  
+	}
+
+	.dropdown-link-hover a i {
+    	margin-left: 10px;
+	}
+
+	.dropdown-menu-item {
+    width: 100%;
+    background: transparent;
+    
+	}
+	.dropdown-menu-item li a{
+	color: #ddd !important;
+	}
+
+	.dropdown-menu-item li a i{
+	color: #ddd !important;
+	margin-left:20px;
+	}
+	.dropdown-menu-item li a:hover {
+    color: #eaeaea !important;
+    background: #5d5858;
+}
+
+.dropdown-submenu-item{
+	width:100% !important;
+}
+
+.dropdown-submenu-item li a i{
+	color: #ddd !important;
+	margin-left:40px;
+	}
+
+
+
+	.drop-sub-menu-toggle {
+    	width: 250px;
+	}
+	 .dropdown-submenu-item{
+        top:0px !important;
+    }
+    .dropdown-menu-item {
+       
+        top: 0px;
+    }
+    .dropdown-link-hover {
+  
+    border-bottom: 1px solid #636363;
+}
+    .dropdown-link-hover a:hover {
+    background: #5d5b5b;
+	}
+	.dropdown-nav-link {
+   
+    margin-left: 0px;
+	}
+	 .dropdown-submenu-item .collapse .show{
+       
+       display: block !important;
+    }
+
+
+
+}
+
+
+/*Max Width 768px Css*/
+
+@media only screen and (max-width: 768px) {
+
+.search-dropdown {
+    left:-70px;
+}
+	
+}
+
+
+
+/*Max Width 576px Css*/
+
+@media only screen and (max-width: 576px) {
+
+.search-dropdown {
+    padding-left: 22px;
+}
+#inputsearch {
+    width: 90% !important;
+}
+	
+}
+
+
+
+/*Max Width 480px Css*/
+
+@media only screen and (max-width: 480px) {
+
+	
+
+}
+
+
+
+/*Max Width 320px Css*/
+
+@media only screen and (max-width: 320px) {
+
+}
+
